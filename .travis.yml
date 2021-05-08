@@ -7,6 +7,7 @@ install:
 
 script:
   - python ${TRAVIS_BUILD_DIR}/build.py --folder ${TRAVIS_BUILD_DIR}/odoo120 --docker-image vauxoo/odoo-ci:12.0
+  - python ${TRAVIS_BUILD_DIR}/build.py --folder ${TRAVIS_BUILD_DIR}/odoo140 --docker-image vauxoo/odoo-ci:14.0
 #  - docker run -it --rm --name fix-vim-snippet -v ${TRAVIS_BUILD_DIR}/odoo-shippable/scripts/fix-vim-snippet.py:/root/fix-vim-snippet.py vauxoo/odoo-80-image-shippable-auto python /root/fix-vim-snippet.py --extensions sh,sql,python
 
 after_success:
